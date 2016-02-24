@@ -1,0 +1,1 @@
+document.querySelector('video')?document.querySelector('video').currentSrc:null

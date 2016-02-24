@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C4A06EF1C70C505008B2C51 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4A06EE1C70C505008B2C51 /* WebKit.framework */; };
+		8C530EFC1C6F226000242FBF /* WatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C530EFB1C6F226000242FBF /* WatchViewController.m */; };
+		8C530F021C6F228F00242FBF /* DiscussionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C530F011C6F228F00242FBF /* DiscussionViewController.m */; };
+		8C530F051C6F22A400242FBF /* CatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C530F041C6F22A400242FBF /* CatalogueViewController.m */; };
+		8C5A6FFF1C74C021001CF377 /* NewUserActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A6FFE1C74C021001CF377 /* NewUserActionViewController.m */; };
+		8C5A70031C75BB34001CF377 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A70021C75BB34001CF377 /* UserDefaultsManager.m */; };
+		8C5A70081C75BF27001CF377 /* ViewComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A70071C75BF27001CF377 /* ViewComposer.m */; };
+		8C5A700A1C75F76E001CF377 /* checkSignedin.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A70091C75F76E001CF377 /* checkSignedin.js */; };
+		8C5A70191C7739CB001CF377 /* checkIfContainsVideo.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A70181C7739CB001CF377 /* checkIfContainsVideo.js */; };
+		8C5A701F1C773A15001CF377 /* VCFloatingActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A701A1C773A15001CF377 /* VCFloatingActionButton.m */; };
+		8C5A70201C773A15001CF377 /* floatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A701C1C773A15001CF377 /* floatTableViewCell.xib */; };
+		8C5A70211C773A15001CF377 /* floatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A701E1C773A15001CF377 /* floatTableViewCell.m */; };
+		8C5A702C1C775671001CF377 /* LaracastVideoDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A702B1C775671001CF377 /* LaracastVideoDownloadManager.m */; };
+		8C5A70311C77569E001CF377 /* TWRDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A702E1C77569E001CF377 /* TWRDownloadManager.m */; };
+		8C5A70321C77569E001CF377 /* TWRDownloadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A70301C77569E001CF377 /* TWRDownloadObject.m */; };
+		8C5A70341C775C54001CF377 /* triggerSearch.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A70331C775C54001CF377 /* triggerSearch.js */; };
+		8C5A70381C775D75001CF377 /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A70371C775D75001CF377 /* DownloadsViewController.m */; };
+		8C5FB33A1C705C7D00BB7C0A /* RootWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB3391C705C7D00BB7C0A /* RootWebViewController.m */; };
+		8C5FB33E1C709E3500BB7C0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33C1C709E3500BB7C0A /* Constants.swift */; };
+		8C5FB33F1C709E3500BB7C0A /* MHImageTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */; };
+		8C7AE0571C70C273003DA821 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7AE0561C70C273003DA821 /* Reveal.framework */; };
+		8C918B031C719C14001FD400 /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B021C719C14001FD400 /* Extensions.m */; };
+		8C918B061C719C35001FD400 /* MWKProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B051C719C35001FD400 /* MWKProgressIndicator.m */; };
+		8C918B131C7206FB001FD400 /* LaracastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B121C7206FB001FD400 /* LaracastViewController.m */; };
+		8C918B161C720741001FD400 /* AAPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B151C720741001FD400 /* AAPullToRefresh.m */; };
+		8C918B191C720749001FD400 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B181C720749001FD400 /* MBProgressHUD.m */; };
+		8CB3EF901C60D3A500B7104F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3EF8F1C60D3A500B7104F /* main.m */; };
+		8CB3EF931C60D3A500B7104F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3EF921C60D3A500B7104F /* AppDelegate.m */; };
+		8CB3EF961C60D3A500B7104F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3EF951C60D3A500B7104F /* RootViewController.m */; };
+		8CB3EF991C60D3A500B7104F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3EF971C60D3A500B7104F /* Main.storyboard */; };
+		8CB3EF9B1C60D3A500B7104F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3EF9A1C60D3A500B7104F /* Assets.xcassets */; };
+		8CB3EF9E1C60D3A500B7104F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB3EF9C1C60D3A500B7104F /* LaunchScreen.storyboard */; };
+		8CB3EFA91C60D3A500B7104F /* LaracasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3EFA81C60D3A500B7104F /* LaracasterTests.m */; };
+		8CB3EFB41C60D3A500B7104F /* LaracasterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3EFB31C60D3A500B7104F /* LaracasterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CB3EFA51C60D3A500B7104F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CB3EF831C60D3A500B7104F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB3EF8A1C60D3A500B7104F;
+			remoteInfo = Laracaster;
+		};
+		8CB3EFB01C60D3A500B7104F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CB3EF831C60D3A500B7104F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB3EF8A1C60D3A500B7104F;
+			remoteInfo = Laracaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C4A06EE1C70C505008B2C51 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8C530EFA1C6F226000242FBF /* WatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchViewController.h; path = "View Controllers/WatchViewController.h"; sourceTree = "<group>"; };
+		8C530EFB1C6F226000242FBF /* WatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchViewController.m; path = "View Controllers/WatchViewController.m"; sourceTree = "<group>"; };
+		8C530F001C6F228F00242FBF /* DiscussionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscussionViewController.h; path = "View Controllers/DiscussionViewController.h"; sourceTree = "<group>"; };
+		8C530F011C6F228F00242FBF /* DiscussionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscussionViewController.m; path = "View Controllers/DiscussionViewController.m"; sourceTree = "<group>"; };
+		8C530F031C6F22A400242FBF /* CatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatalogueViewController.h; path = "View Controllers/CatalogueViewController.h"; sourceTree = "<group>"; };
+		8C530F041C6F22A400242FBF /* CatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatalogueViewController.m; path = "View Controllers/CatalogueViewController.m"; sourceTree = "<group>"; };
+		8C5A6FFB1C74BA61001CF377 /* NotificationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NotificationConstants.h; path = Inc/NotificationConstants.h; sourceTree = "<group>"; };
+		8C5A6FFD1C74C021001CF377 /* NewUserActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewUserActionViewController.h; path = "View Controllers/NewUserActionViewController.h"; sourceTree = "<group>"; };
+		8C5A6FFE1C74C021001CF377 /* NewUserActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewUserActionViewController.m; path = "View Controllers/NewUserActionViewController.m"; sourceTree = "<group>"; };
+		8C5A70011C75BB34001CF377 /* UserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultsManager.h; path = Inc/UserDefaultsManager.h; sourceTree = "<group>"; };
+		8C5A70021C75BB34001CF377 /* UserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefaultsManager.m; path = Inc/UserDefaultsManager.m; sourceTree = "<group>"; };
+		8C5A70041C75BC63001CF377 /* UserDefaultKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserDefaultKeys.h; path = Inc/UserDefaultKeys.h; sourceTree = "<group>"; };
+		8C5A70061C75BF27001CF377 /* ViewComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewComposer.h; path = Inc/ViewComposer.h; sourceTree = "<group>"; };
+		8C5A70071C75BF27001CF377 /* ViewComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewComposer.m; path = Inc/ViewComposer.m; sourceTree = "<group>"; };
+		8C5A70091C75F76E001CF377 /* checkSignedin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = checkSignedin.js; path = "Other resources/checkSignedin.js"; sourceTree = "<group>"; };
+		8C5A70181C7739CB001CF377 /* checkIfContainsVideo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = checkIfContainsVideo.js; path = "Other resources/checkIfContainsVideo.js"; sourceTree = "<group>"; };
+		8C5A701A1C773A15001CF377 /* VCFloatingActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCFloatingActionButton.m; path = Libs/VCFloatingActionButton.m; sourceTree = "<group>"; };
+		8C5A701B1C773A15001CF377 /* VCFloatingActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCFloatingActionButton.h; path = Libs/VCFloatingActionButton.h; sourceTree = "<group>"; };
+		8C5A701C1C773A15001CF377 /* floatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = floatTableViewCell.xib; path = Libs/floatTableViewCell.xib; sourceTree = "<group>"; };
+		8C5A701D1C773A15001CF377 /* floatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = floatTableViewCell.h; path = Libs/floatTableViewCell.h; sourceTree = "<group>"; };
+		8C5A701E1C773A15001CF377 /* floatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = floatTableViewCell.m; path = Libs/floatTableViewCell.m; sourceTree = "<group>"; };
+		8C5A702A1C775671001CF377 /* LaracastVideoDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaracastVideoDownloadManager.h; path = Inc/LaracastVideoDownloadManager.h; sourceTree = "<group>"; };
+		8C5A702B1C775671001CF377 /* LaracastVideoDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaracastVideoDownloadManager.m; path = Inc/LaracastVideoDownloadManager.m; sourceTree = "<group>"; };
+		8C5A702D1C77569E001CF377 /* TWRDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRDownloadManager.h; path = Libs/TWRDownloadManager.h; sourceTree = "<group>"; };
+		8C5A702E1C77569E001CF377 /* TWRDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRDownloadManager.m; path = Libs/TWRDownloadManager.m; sourceTree = "<group>"; };
+		8C5A702F1C77569E001CF377 /* TWRDownloadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRDownloadObject.h; path = Libs/TWRDownloadObject.h; sourceTree = "<group>"; };
+		8C5A70301C77569E001CF377 /* TWRDownloadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRDownloadObject.m; path = Libs/TWRDownloadObject.m; sourceTree = "<group>"; };
+		8C5A70331C775C54001CF377 /* triggerSearch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = triggerSearch.js; path = "Other resources/triggerSearch.js"; sourceTree = "<group>"; };
+		8C5A70361C775D75001CF377 /* DownloadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadsViewController.h; path = "View Controllers/DownloadsViewController.h"; sourceTree = "<group>"; };
+		8C5A70371C775D75001CF377 /* DownloadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadsViewController.m; path = "View Controllers/DownloadsViewController.m"; sourceTree = "<group>"; };
+		8C5FB3381C705C7D00BB7C0A /* RootWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootWebViewController.h; path = "View Controllers/RootWebViewController.h"; sourceTree = "<group>"; };
+		8C5FB3391C705C7D00BB7C0A /* RootWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootWebViewController.m; path = "View Controllers/RootWebViewController.m"; sourceTree = "<group>"; };
+		8C5FB33C1C709E3500BB7C0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Libs/Constants.swift; sourceTree = "<group>"; };
+		8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MHImageTabBarViewController.swift; path = Libs/MHImageTabBarViewController.swift; sourceTree = "<group>"; };
+		8C7AE0561C70C273003DA821 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		8C918B011C719C14001FD400 /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Extensions.h; path = Inc/Extensions.h; sourceTree = "<group>"; };
+		8C918B021C719C14001FD400 /* Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Extensions.m; path = Inc/Extensions.m; sourceTree = "<group>"; };
+		8C918B041C719C35001FD400 /* MWKProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWKProgressIndicator.h; path = Libs/MWKProgressIndicator.h; sourceTree = "<group>"; };
+		8C918B051C719C35001FD400 /* MWKProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWKProgressIndicator.m; path = Libs/MWKProgressIndicator.m; sourceTree = "<group>"; };
+		8C918B081C719F00001FD400 /* URLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = URLConstants.h; path = Inc/URLConstants.h; sourceTree = "<group>"; };
+		8C918B111C7206FB001FD400 /* LaracastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaracastViewController.h; path = "View Controllers/LaracastViewController.h"; sourceTree = "<group>"; };
+		8C918B121C7206FB001FD400 /* LaracastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaracastViewController.m; path = "View Controllers/LaracastViewController.m"; sourceTree = "<group>"; };
+		8C918B141C720741001FD400 /* AAPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AAPullToRefresh.h; path = Libs/AAPullToRefresh.h; sourceTree = "<group>"; };
+		8C918B151C720741001FD400 /* AAPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AAPullToRefresh.m; path = Libs/AAPullToRefresh.m; sourceTree = "<group>"; };
+		8C918B171C720749001FD400 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libs/MBProgressHUD.h; sourceTree = "<group>"; };
+		8C918B181C720749001FD400 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libs/MBProgressHUD.m; sourceTree = "<group>"; };
+		8C918B1A1C720754001FD400 /* Laracaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Laracaster-Bridging-Header.h"; path = "Inc/Laracaster-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CB3EF8B1C60D3A500B7104F /* Laracaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laracaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB3EF8F1C60D3A500B7104F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CB3EF911C60D3A500B7104F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CB3EF921C60D3A500B7104F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CB3EF941C60D3A500B7104F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8CB3EF951C60D3A500B7104F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8CB3EF981C60D3A500B7104F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CB3EF9A1C60D3A500B7104F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CB3EF9D1C60D3A500B7104F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CB3EF9F1C60D3A500B7104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB3EFA41C60D3A500B7104F /* LaracasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaracasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB3EFA81C60D3A500B7104F /* LaracasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaracasterTests.m; sourceTree = "<group>"; };
+		8CB3EFAA1C60D3A500B7104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB3EFAF1C60D3A500B7104F /* LaracasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaracasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB3EFB31C60D3A500B7104F /* LaracasterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaracasterUITests.m; sourceTree = "<group>"; };
+		8CB3EFB51C60D3A500B7104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CB3EF881C60D3A500B7104F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4A06EF1C70C505008B2C51 /* WebKit.framework in Frameworks */,
+				8C7AE0571C70C273003DA821 /* Reveal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFA11C60D3A500B7104F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFAC1C60D3A500B7104F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C530EF01C6F1CF700242FBF /* Image Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FB33C1C709E3500BB7C0A /* Constants.swift */,
+				8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */,
+			);
+			name = "Image Tabbar";
+			sourceTree = "<group>";
+		};
+		8C530EF61C6F213600242FBF /* WatchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C530EFA1C6F226000242FBF /* WatchViewController.h */,
+				8C530EFB1C6F226000242FBF /* WatchViewController.m */,
+			);
+			name = WatchViewController;
+			sourceTree = "<group>";
+		};
+		8C530EF71C6F214300242FBF /* CatalogueViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C530F031C6F22A400242FBF /* CatalogueViewController.h */,
+				8C530F041C6F22A400242FBF /* CatalogueViewController.m */,
+			);
+			name = CatalogueViewController;
+			sourceTree = "<group>";
+		};
+		8C530EF81C6F215A00242FBF /* DiscussionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C530F001C6F228F00242FBF /* DiscussionViewController.h */,
+				8C530F011C6F228F00242FBF /* DiscussionViewController.m */,
+			);
+			name = DiscussionViewController;
+			sourceTree = "<group>";
+		};
+		8C530F091C6F246E00242FBF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8CB3EF9A1C60D3A500B7104F /* Assets.xcassets */,
+				8C5A70091C75F76E001CF377 /* checkSignedin.js */,
+				8C5A70181C7739CB001CF377 /* checkIfContainsVideo.js */,
+				8C5A70331C775C54001CF377 /* triggerSearch.js */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8C5A6FFC1C74BFF3001CF377 /* NewUserActionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A6FFD1C74C021001CF377 /* NewUserActionViewController.h */,
+				8C5A6FFE1C74C021001CF377 /* NewUserActionViewController.m */,
+			);
+			name = NewUserActionViewController;
+			sourceTree = "<group>";
+		};
+		8C5A70001C75BB0F001CF377 /* User Defaults Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A70011C75BB34001CF377 /* UserDefaultsManager.h */,
+				8C5A70021C75BB34001CF377 /* UserDefaultsManager.m */,
+			);
+			name = "User Defaults Manager";
+			sourceTree = "<group>";
+		};
+		8C5A70051C75BF13001CF377 /* ViewComposer */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A70061C75BF27001CF377 /* ViewComposer.h */,
+				8C5A70071C75BF27001CF377 /* ViewComposer.m */,
+			);
+			name = ViewComposer;
+			sourceTree = "<group>";
+		};
+		8C5A700F1C76E37F001CF377 /* Floating button  */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A701A1C773A15001CF377 /* VCFloatingActionButton.m */,
+				8C5A701B1C773A15001CF377 /* VCFloatingActionButton.h */,
+				8C5A701C1C773A15001CF377 /* floatTableViewCell.xib */,
+				8C5A701D1C773A15001CF377 /* floatTableViewCell.h */,
+				8C5A701E1C773A15001CF377 /* floatTableViewCell.m */,
+			);
+			name = "Floating button ";
+			sourceTree = "<group>";
+		};
+		8C5A70221C775609001CF377 /* Download Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A702D1C77569E001CF377 /* TWRDownloadManager.h */,
+				8C5A702E1C77569E001CF377 /* TWRDownloadManager.m */,
+				8C5A702F1C77569E001CF377 /* TWRDownloadObject.h */,
+				8C5A70301C77569E001CF377 /* TWRDownloadObject.m */,
+			);
+			name = "Download Manager";
+			sourceTree = "<group>";
+		};
+		8C5A70291C77563B001CF377 /* Laracasts Video Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A702A1C775671001CF377 /* LaracastVideoDownloadManager.h */,
+				8C5A702B1C775671001CF377 /* LaracastVideoDownloadManager.m */,
+			);
+			name = "Laracasts Video Manager";
+			sourceTree = "<group>";
+		};
+		8C5A70351C775D4F001CF377 /* DownloadsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A70361C775D75001CF377 /* DownloadsViewController.h */,
+				8C5A70371C775D75001CF377 /* DownloadsViewController.m */,
+			);
+			name = DownloadsViewController;
+			sourceTree = "<group>";
+		};
+		8C5A70391C782BC0001CF377 /* DownloadTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DownloadTableViewCell;
+			sourceTree = "<group>";
+		};
+		8C5FB3351C705B8900BB7C0A /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A6FFC1C74BFF3001CF377 /* NewUserActionViewController */,
+				8C5FB3371C705BA200BB7C0A /* LaracastWebViewController */,
+				8C5FB3361C705B8F00BB7C0A /* RootWebViewController */,
+			);
+			name = Foundations;
+			sourceTree = "<group>";
+		};
+		8C5FB3361C705B8F00BB7C0A /* RootWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FB3381C705C7D00BB7C0A /* RootWebViewController.h */,
+				8C5FB3391C705C7D00BB7C0A /* RootWebViewController.m */,
+			);
+			name = RootWebViewController;
+			sourceTree = "<group>";
+		};
+		8C5FB3371C705BA200BB7C0A /* LaracastWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B111C7206FB001FD400 /* LaracastViewController.h */,
+				8C918B121C7206FB001FD400 /* LaracastViewController.m */,
+			);
+			name = LaracastWebViewController;
+			sourceTree = "<group>";
+		};
+		8C5FB33B1C709E0C00BB7C0A /* Navbar Progress Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B041C719C35001FD400 /* MWKProgressIndicator.h */,
+				8C918B051C719C35001FD400 /* MWKProgressIndicator.m */,
+			);
+			name = "Navbar Progress Indicator";
+			sourceTree = "<group>";
+		};
+		8C8466CD1C6B774F00586CBC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C5FB3351C705B8900BB7C0A /* Foundations */,
+				8C5A70351C775D4F001CF377 /* DownloadsViewController */,
+				8C530EF81C6F215A00242FBF /* DiscussionViewController */,
+				8C530EF71C6F214300242FBF /* CatalogueViewController */,
+				8C530EF61C6F213600242FBF /* WatchViewController */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8C8466CE1C6B775A00586CBC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				8C5A70221C775609001CF377 /* Download Manager */,
+				8C5A700F1C76E37F001CF377 /* Floating button  */,
+				8C918B0D1C71A9A9001FD400 /* Multi-orientation Refresh */,
+				8C918B091C71A4DD001FD400 /* MBProgressHUD */,
+				8C5FB33B1C709E0C00BB7C0A /* Navbar Progress Indicator */,
+				8C530EF01C6F1CF700242FBF /* Image Tabbar */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		8C8466CF1C6B780B00586CBC /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B1A1C720754001FD400 /* Laracaster-Bridging-Header.h */,
+				8C5A70391C782BC0001CF377 /* DownloadTableViewCell */,
+				8C5A70291C77563B001CF377 /* Laracasts Video Manager */,
+				8C5A70051C75BF13001CF377 /* ViewComposer */,
+				8C5A70001C75BB0F001CF377 /* User Defaults Manager */,
+				8C918B071C719EE1001FD400 /* Constants */,
+				8C918B001C719BE1001FD400 /* Extensions */,
+			);
+			name = Inc;
+			sourceTree = "<group>";
+		};
+		8C918B001C719BE1001FD400 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B011C719C14001FD400 /* Extensions.h */,
+				8C918B021C719C14001FD400 /* Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8C918B071C719EE1001FD400 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B081C719F00001FD400 /* URLConstants.h */,
+				8C5A6FFB1C74BA61001CF377 /* NotificationConstants.h */,
+				8C5A70041C75BC63001CF377 /* UserDefaultKeys.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		8C918B091C71A4DD001FD400 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B171C720749001FD400 /* MBProgressHUD.h */,
+				8C918B181C720749001FD400 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		8C918B0D1C71A9A9001FD400 /* Multi-orientation Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				8C918B141C720741001FD400 /* AAPullToRefresh.h */,
+				8C918B151C720741001FD400 /* AAPullToRefresh.m */,
+			);
+			name = "Multi-orientation Refresh";
+			sourceTree = "<group>";
+		};
+		8CB3EF821C60D3A500B7104F = {
+			isa = PBXGroup;
+			children = (
+				8C4A06EE1C70C505008B2C51 /* WebKit.framework */,
+				8CB3EF8D1C60D3A500B7104F /* Laracaster */,
+				8CB3EFA71C60D3A500B7104F /* LaracasterTests */,
+				8CB3EFB21C60D3A500B7104F /* LaracasterUITests */,
+				8CB3EF8C1C60D3A500B7104F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CB3EF8C1C60D3A500B7104F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CB3EF8B1C60D3A500B7104F /* Laracaster.app */,
+				8CB3EFA41C60D3A500B7104F /* LaracasterTests.xctest */,
+				8CB3EFAF1C60D3A500B7104F /* LaracasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CB3EF8D1C60D3A500B7104F /* Laracaster */ = {
+			isa = PBXGroup;
+			children = (
+				8C530F091C6F246E00242FBF /* Assets */,
+				8C8466CF1C6B780B00586CBC /* Inc */,
+				8C8466CE1C6B775A00586CBC /* Libs */,
+				8C8466CD1C6B774F00586CBC /* View Controllers */,
+				8CB3EF911C60D3A500B7104F /* AppDelegate.h */,
+				8CB3EF921C60D3A500B7104F /* AppDelegate.m */,
+				8CB3EF941C60D3A500B7104F /* RootViewController.h */,
+				8CB3EF951C60D3A500B7104F /* RootViewController.m */,
+				8CB3EF971C60D3A500B7104F /* Main.storyboard */,
+				8CB3EF9C1C60D3A500B7104F /* LaunchScreen.storyboard */,
+				8CB3EF9F1C60D3A500B7104F /* Info.plist */,
+				8CB3EF8E1C60D3A500B7104F /* Supporting Files */,
+			);
+			path = Laracaster;
+			sourceTree = "<group>";
+		};
+		8CB3EF8E1C60D3A500B7104F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AE0561C70C273003DA821 /* Reveal.framework */,
+				8CB3EF8F1C60D3A500B7104F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CB3EFA71C60D3A500B7104F /* LaracasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CB3EFA81C60D3A500B7104F /* LaracasterTests.m */,
+				8CB3EFAA1C60D3A500B7104F /* Info.plist */,
+			);
+			path = LaracasterTests;
+			sourceTree = "<group>";
+		};
+		8CB3EFB21C60D3A500B7104F /* LaracasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CB3EFB31C60D3A500B7104F /* LaracasterUITests.m */,
+				8CB3EFB51C60D3A500B7104F /* Info.plist */,
+			);
+			path = LaracasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CB3EF8A1C60D3A500B7104F /* Laracaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB3EFB81C60D3A500B7104F /* Build configuration list for PBXNativeTarget "Laracaster" */;
+			buildPhases = (
+				8CB3EF871C60D3A500B7104F /* Sources */,
+				8CB3EF881C60D3A500B7104F /* Frameworks */,
+				8CB3EF891C60D3A500B7104F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Laracaster;
+			productName = Laracaster;
+			productReference = 8CB3EF8B1C60D3A500B7104F /* Laracaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CB3EFA31C60D3A500B7104F /* LaracasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB3EFBB1C60D3A500B7104F /* Build configuration list for PBXNativeTarget "LaracasterTests" */;
+			buildPhases = (
+				8CB3EFA01C60D3A500B7104F /* Sources */,
+				8CB3EFA11C60D3A500B7104F /* Frameworks */,
+				8CB3EFA21C60D3A500B7104F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB3EFA61C60D3A500B7104F /* PBXTargetDependency */,
+			);
+			name = LaracasterTests;
+			productName = LaracasterTests;
+			productReference = 8CB3EFA41C60D3A500B7104F /* LaracasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CB3EFAE1C60D3A500B7104F /* LaracasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB3EFBE1C60D3A500B7104F /* Build configuration list for PBXNativeTarget "LaracasterUITests" */;
+			buildPhases = (
+				8CB3EFAB1C60D3A500B7104F /* Sources */,
+				8CB3EFAC1C60D3A500B7104F /* Frameworks */,
+				8CB3EFAD1C60D3A500B7104F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB3EFB11C60D3A500B7104F /* PBXTargetDependency */,
+			);
+			name = LaracasterUITests;
+			productName = LaracasterUITests;
+			productReference = 8CB3EFAF1C60D3A500B7104F /* LaracasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CB3EF831C60D3A500B7104F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Reactive Studio";
+				TargetAttributes = {
+					8CB3EF8A1C60D3A500B7104F = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K2T8GJQBE7;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					8CB3EFA31C60D3A500B7104F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8CB3EF8A1C60D3A500B7104F;
+					};
+					8CB3EFAE1C60D3A500B7104F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8CB3EF8A1C60D3A500B7104F;
+					};
+				};
+			};
+			buildConfigurationList = 8CB3EF861C60D3A500B7104F /* Build configuration list for PBXProject "Laracaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CB3EF821C60D3A500B7104F;
+			productRefGroup = 8CB3EF8C1C60D3A500B7104F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CB3EF8A1C60D3A500B7104F /* Laracaster */,
+				8CB3EFA31C60D3A500B7104F /* LaracasterTests */,
+				8CB3EFAE1C60D3A500B7104F /* LaracasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CB3EF891C60D3A500B7104F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5A700A1C75F76E001CF377 /* checkSignedin.js in Resources */,
+				8CB3EF9E1C60D3A500B7104F /* LaunchScreen.storyboard in Resources */,
+				8C5A70201C773A15001CF377 /* floatTableViewCell.xib in Resources */,
+				8CB3EF9B1C60D3A500B7104F /* Assets.xcassets in Resources */,
+				8C5A70341C775C54001CF377 /* triggerSearch.js in Resources */,
+				8C5A70191C7739CB001CF377 /* checkIfContainsVideo.js in Resources */,
+				8CB3EF991C60D3A500B7104F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFA21C60D3A500B7104F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFAD1C60D3A500B7104F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CB3EF871C60D3A500B7104F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5A70081C75BF27001CF377 /* ViewComposer.m in Sources */,
+				8C918B131C7206FB001FD400 /* LaracastViewController.m in Sources */,
+				8C530F051C6F22A400242FBF /* CatalogueViewController.m in Sources */,
+				8C5A701F1C773A15001CF377 /* VCFloatingActionButton.m in Sources */,
+				8C530F021C6F228F00242FBF /* DiscussionViewController.m in Sources */,
+				8C918B161C720741001FD400 /* AAPullToRefresh.m in Sources */,
+				8CB3EF961C60D3A500B7104F /* RootViewController.m in Sources */,
+				8C5A702C1C775671001CF377 /* LaracastVideoDownloadManager.m in Sources */,
+				8C5A70031C75BB34001CF377 /* UserDefaultsManager.m in Sources */,
+				8C5A70381C775D75001CF377 /* DownloadsViewController.m in Sources */,
+				8C918B031C719C14001FD400 /* Extensions.m in Sources */,
+				8C5FB33F1C709E3500BB7C0A /* MHImageTabBarViewController.swift in Sources */,
+				8C918B191C720749001FD400 /* MBProgressHUD.m in Sources */,
+				8CB3EF931C60D3A500B7104F /* AppDelegate.m in Sources */,
+				8C5A70321C77569E001CF377 /* TWRDownloadObject.m in Sources */,
+				8C5A70211C773A15001CF377 /* floatTableViewCell.m in Sources */,
+				8C530EFC1C6F226000242FBF /* WatchViewController.m in Sources */,
+				8CB3EF901C60D3A500B7104F /* main.m in Sources */,
+				8C5A70311C77569E001CF377 /* TWRDownloadManager.m in Sources */,
+				8C5FB33A1C705C7D00BB7C0A /* RootWebViewController.m in Sources */,
+				8C918B061C719C35001FD400 /* MWKProgressIndicator.m in Sources */,
+				8C5A6FFF1C74C021001CF377 /* NewUserActionViewController.m in Sources */,
+				8C5FB33E1C709E3500BB7C0A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFA01C60D3A500B7104F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB3EFA91C60D3A500B7104F /* LaracasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB3EFAB1C60D3A500B7104F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB3EFB41C60D3A500B7104F /* LaracasterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CB3EFA61C60D3A500B7104F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB3EF8A1C60D3A500B7104F /* Laracaster */;
+			targetProxy = 8CB3EFA51C60D3A500B7104F /* PBXContainerItemProxy */;
+		};
+		8CB3EFB11C60D3A500B7104F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB3EF8A1C60D3A500B7104F /* Laracaster */;
+			targetProxy = 8CB3EFB01C60D3A500B7104F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CB3EF971C60D3A500B7104F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CB3EF981C60D3A500B7104F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CB3EF9C1C60D3A500B7104F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CB3EF9D1C60D3A500B7104F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CB3EFB61C60D3A500B7104F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CB3EFB71C60D3A500B7104F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CB3EFB91C60D3A500B7104F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				INFOPLIST_FILE = Laracaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.Laracaster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Laracaster/Inc/Laracaster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CB3EFBA1C60D3A500B7104F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries\"",
+				);
+				INFOPLIST_FILE = Laracaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					"Reveal\n",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.Laracaster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Laracaster/Inc/Laracaster-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CB3EFBC1C60D3A500B7104F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LaracasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.LaracasterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laracaster.app/Laracaster";
+			};
+			name = Debug;
+		};
+		8CB3EFBD1C60D3A500B7104F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LaracasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.LaracasterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laracaster.app/Laracaster";
+			};
+			name = Release;
+		};
+		8CB3EFBF1C60D3A500B7104F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LaracasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.LaracasterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Laracaster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8CB3EFC01C60D3A500B7104F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LaracasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.LaracasterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Laracaster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CB3EF861C60D3A500B7104F /* Build configuration list for PBXProject "Laracaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB3EFB61C60D3A500B7104F /* Debug */,
+				8CB3EFB71C60D3A500B7104F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB3EFB81C60D3A500B7104F /* Build configuration list for PBXNativeTarget "Laracaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB3EFB91C60D3A500B7104F /* Debug */,
+				8CB3EFBA1C60D3A500B7104F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB3EFBB1C60D3A500B7104F /* Build configuration list for PBXNativeTarget "LaracasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB3EFBC1C60D3A500B7104F /* Debug */,
+				8CB3EFBD1C60D3A500B7104F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB3EFBE1C60D3A500B7104F /* Build configuration list for PBXNativeTarget "LaracasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB3EFBF1C60D3A500B7104F /* Debug */,
+				8CB3EFC01C60D3A500B7104F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CB3EF831C60D3A500B7104F /* Project object */;
+}

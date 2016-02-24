@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Views-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MHImageTabBarViewController" customModule="Laracaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gU-BM-lXc"/>
+                        <viewControllerLayoutGuide type="bottom" id="yzF-kD-RO1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Kz-m1-XuI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SV-9y-OyE" userLabel="TabBar">
+                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weJ-OX-pa4" userLabel="Separator">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="0.5"/>
+                                        <color key="backgroundColor" red="1" green="0.90382708150000002" blue="0.56354662980000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="f3Q-XU-nI1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64292315099999997" green="0.91508838380000002" blue="0.71312409129999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="right" secondItem="weJ-OX-pa4" secondAttribute="right" id="NmO-x2-HYx"/>
+                                    <constraint firstAttribute="height" constant="45" id="ZLV-4N-JAj"/>
+                                    <constraint firstItem="weJ-OX-pa4" firstAttribute="top" secondItem="5SV-9y-OyE" secondAttribute="top" id="p4J-Rc-g5I"/>
+                                    <constraint firstItem="weJ-OX-pa4" firstAttribute="left" secondItem="5SV-9y-OyE" secondAttribute="left" id="w9I-4w-Zs7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5SV-9y-OyE" firstAttribute="left" secondItem="2Kz-m1-XuI" secondAttribute="left" id="05m-Zw-Vmt"/>
+                            <constraint firstAttribute="right" secondItem="5SV-9y-OyE" secondAttribute="right" id="5NG-sK-ztn"/>
+                            <constraint firstItem="yzF-kD-RO1" firstAttribute="top" secondItem="5SV-9y-OyE" secondAttribute="bottom" id="93C-si-Dfg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Views" id="PhR-XX-XLD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="YQH-8X-bsw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tabBar" destination="5SV-9y-OyE" id="6et-NJ-qt0"/>
+                        <outlet property="tabBarHeightConstraint" destination="ZLV-4N-JAj" id="eax-mR-1Ha"/>
+                        <outlet property="tabBarSeparator" destination="weJ-OX-pa4" id="KQe-e6-wov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520" y="399"/>
+        </scene>
+        <!--New User Action View Controller-->
+        <scene sceneID="i3K-e4-Bad">
+            <objects>
+                <viewController storyboardIdentifier="NewUserActionViewController" id="hb5-bU-au7" customClass="NewUserActionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ELW-PU-Xyh"/>
+                        <viewControllerLayoutGuide type="bottom" id="n52-XD-HYu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycw-rF-hke">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Li-Hu-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4460" y="1397"/>
+        </scene>
+        <!--Watch-->
+        <scene sceneID="BK6-tW-0WN">
+            <objects>
+                <viewController storyboardIdentifier="WatchViewController" id="XdR-ZJ-rXc" customClass="WatchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FU0-wJ-0pT"/>
+                        <viewControllerLayoutGuide type="bottom" id="MIi-8s-Rya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hNt-io-x8A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Watch" id="3ru-Rr-N9R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6q-YR-nGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6247" y="-108"/>
+        </scene>
+        <!--Discussion View Controller-->
+        <scene sceneID="JRk-Fd-JAP">
+            <objects>
+                <viewController storyboardIdentifier="DiscussionViewController" id="hcH-WD-ffK" customClass="DiscussionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngE-M2-gsi"/>
+                        <viewControllerLayoutGuide type="bottom" id="5bv-EV-JnA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mjK-yT-NCL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Of3-cu-0by" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6958" y="-90"/>
+        </scene>
+        <!--Catalogue View Controller-->
+        <scene sceneID="1dn-oB-Ydq">
+            <objects>
+                <viewController storyboardIdentifier="CatalogueViewController" id="eeE-AZ-Lro" customClass="CatalogueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kbt-18-6ZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="R4N-g4-o3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfa-LO-Xjz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk3-Ra-KC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5436" y="695"/>
+        </scene>
+        <!--Downloads View Controller-->
+        <scene sceneID="dN1-gk-Bxw">
+            <objects>
+                <viewController storyboardIdentifier="DownloadsViewController" id="jcA-EB-m2o" customClass="DownloadsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mMG-QT-Z0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZS-04-Epa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gz2-gO-yik">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="72c-pm-CTw">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="settings" id="h88-47-KLV">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Da3-SZ-bil">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Downloading"/>
+                                <segment title="Downloaded"/>
+                            </segments>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="downloadStatusChanged:" destination="jcA-EB-m2o" eventType="valueChanged" id="Rw0-CU-Iey"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="downloadStatusControl" destination="Da3-SZ-bil" id="g7c-zH-8aj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtX-in-Dzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7409" y="720"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mib-oC-osJ">
+            <objects>
+                <navigationController storyboardIdentifier="DownloadsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="tMj-Ml-YnY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TH3-Zg-PJd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jcA-EB-m2o" kind="relationship" relationship="rootViewController" id="qaY-Gl-NQJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctt-bM-ezt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6597" y="720"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="17" height="17"/>
+    </resources>
+</document>
