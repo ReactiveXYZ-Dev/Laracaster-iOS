@@ -172,6 +172,49 @@
         enableBackgroundMode:backgroundMode];
 }
 
+-(TWRDownloadObject*)downloadingObjectForUrl:(NSString *)url{
+    
+    return [self.downloads objectForKey:url];
+    
+}
+
+-(void)suspendTaskForUrl:(NSString *)fileIdentifier{
+    
+    TWRDownloadObject* download = [self.downloads objectForKey:fileIdentifier];
+    
+    if (download) {
+        
+        [download.downloadTask suspend];
+        
+    }
+    
+    if (_downloads.count == 0) {
+        
+        [self cleanTmpDirectory];
+        
+    }
+    
+}
+
+-(void)resumeTaskForUrl:(NSString *)fileIdentifier{
+    
+    TWRDownloadObject* download = [self.downloads objectForKey:fileIdentifier];
+    
+    if (download) {
+        
+        [download.downloadTask resume];
+        
+    }
+    
+    if (_downloads.count == 0) {
+        
+        [self cleanTmpDirectory];
+        
+    }
+    
+}
+
+
 - (void)cancelDownloadForUrl:(NSString *)fileIdentifier {
     TWRDownloadObject *download = [self.downloads objectForKey:fileIdentifier];
     if (download) {

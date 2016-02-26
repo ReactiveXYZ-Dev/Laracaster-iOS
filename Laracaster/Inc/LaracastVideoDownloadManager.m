@@ -8,7 +8,11 @@
 
 #import "LaracastVideoDownloadManager.h"
 
-static NSString* videoDir = @"video";
+#import "TWRDownloadManager.h"
+
+#import "TWRDownloadObject.h"
+
+static NSString* videoDir = @"videos";
 
 @interface LaracastVideoDownloadManager(){
     

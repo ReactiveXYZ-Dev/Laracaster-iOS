@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
 
+@class TWRDownloadObject;
+
 @interface TWRDownloadManager : NSObject
 
 @property (nonatomic, strong) void(^backgroundTransferCompletionHandler)();
@@ -65,6 +67,11 @@
            completionBlock:(void(^)(BOOL completed))completionBlock
       enableBackgroundMode:(BOOL)backgroundMode;
 
+-(TWRDownloadObject*)downloadingObjectForUrl:(NSString*)url;
+
+-(void)suspendTaskForUrl:(NSString*)fileIdentifier;
+-(void)resumeTaskForUrl:(NSString*)fileIdentifier;
+
 - (void)cancelAllDownloads;
 - (void)cancelDownloadForUrl:(NSString *)fileIdentifier;
 
@@ -74,7 +81,8 @@
 - (BOOL)isFileDownloadingForUrl:(NSString *)url withProgressBlock:(void(^)(CGFloat progress))block;
 - (BOOL)isFileDownloadingForUrl:(NSString *)url withProgressBlock:(void(^)(CGFloat progress))block completionBlock:(void(^)(BOOL completed))completionBlock;
 
-- (NSString *)localPathForFile:(NSString *)fileIdentifier;
+
+- (NSString *)localPathForFilse:(NSString *)fileIdentifier;
 - (NSString *)localPathForFile:(NSString *)fileIdentifier inDirectory:(NSString *)directoryName;
 
 - (BOOL)fileExistsForUrl:(NSString *)urlString;
