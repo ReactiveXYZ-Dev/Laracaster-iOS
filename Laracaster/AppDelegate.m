@@ -10,6 +10,8 @@
 
 #import "TWRDownloadManager.h"
 
+#import "LaracastVideoFileManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -48,6 +50,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    // save the group configuration data to file
+    [[LaracastVideoFileManager sharedManager]saveGroupMap];
 }
 
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler{

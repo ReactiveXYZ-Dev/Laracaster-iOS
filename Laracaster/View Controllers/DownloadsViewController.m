@@ -8,6 +8,8 @@
 
 #import "DownloadsViewController.h"
 
+#import "Laracaster-Bridging-Header.h"
+
 typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
     
     TABLEVIEW_DOWNLOADING = 0,
@@ -16,11 +18,15 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
     
 };
 
-@interface DownloadsViewController ()
+@interface DownloadsViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *downloadStatusControl;
 
 @property (strong,nonatomic) UIBarButtonItem* addFolderBarBtn;
+
+@property (strong,nonatomic) UITableView* downloadingTableView;
+
+@property (strong,nonatomic) UITableView* downloadedTableView;
 
 @end
 
@@ -29,8 +35,36 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    // Add the tableviews
+    _downloadingTableView = [[UITableView alloc]initWithFrame:self.view.frame];
     
+    _downloadingTableView.tag = TABLEVIEW_DOWNLOADING;
+    
+    _downloadingTableView.delegate = self;
+    
+    _downloadingTableView.dataSource = self;
+    
+    _downloadingTableView.hidden = YES;
+    
+    [self.view addSubview:_downloadingTableView];
+    
+    _downloadedTableView = [[UITableView alloc]initWithFrame:self.view.frame];
+    
+    _downloadedTableView.tag = TABLEVIEW_DOWNLOADED;
+    
+    _downloadedTableView.delegate = self;
+    
+    _downloadedTableView.dataSource = self;
+    
+    _downloadedTableView.hidden = YES;
+    
+    [self.view addSubview:_downloadedTableView];
+    
+    // switch to the default tableview [For testing, now default to the downloaded interface]
+    [_downloadStatusControl setSelectedSegmentIndex:1];
+    
+    [self switchToTableView:TABLEVIEW_DOWNLOADED];
     
     
 }
@@ -88,15 +122,18 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
             
         case TABLEVIEW_DOWNLOADING:{
             
-            // @todo:
+            [_downloadingTableView reloadData];
             
+            _downloadingTableView.hidden = NO;
         }
         
             break;
         
         case TABLEVIEW_DOWNLOADED:{
             
-            // @todo:
+            [_downloadedTableView reloadData];
+            
+            _downloadedTableView.hidden = NO;
             
         }
             break;
@@ -110,8 +147,11 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
 // show an alert with textfield so that user can create a folder for grouping his videos
 -(void)showAddFolderPrompt{
     
-    // @todo:
+    // @todo: use BMInputBox after successful compliation
     
 }
+
+#pragma mark - TableView Delegates and Data source
+
 
 @end

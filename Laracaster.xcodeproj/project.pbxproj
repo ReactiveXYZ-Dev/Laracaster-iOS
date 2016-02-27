@@ -28,6 +28,9 @@
 		8C5FB33E1C709E3500BB7C0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33C1C709E3500BB7C0A /* Constants.swift */; };
 		8C5FB33F1C709E3500BB7C0A /* MHImageTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */; };
 		8C7AE0571C70C273003DA821 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7AE0561C70C273003DA821 /* Reveal.framework */; };
+		8C908E7A1C8175EF00E792FD /* BMInputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908E791C8175EF00E792FD /* BMInputBox.swift */; };
+		8C908E831C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C908E811C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m */; };
+		8C908E841C817E8B00E792FD /* DownloadedFileSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C908E821C817E8B00E792FD /* DownloadedFileSystemTableViewCell.xib */; };
 		8C918B031C719C14001FD400 /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B021C719C14001FD400 /* Extensions.m */; };
 		8C918B061C719C35001FD400 /* MWKProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B051C719C35001FD400 /* MWKProgressIndicator.m */; };
 		8C918B131C7206FB001FD400 /* LaracastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C918B121C7206FB001FD400 /* LaracastViewController.m */; };
@@ -99,6 +102,10 @@
 		8C5FB33C1C709E3500BB7C0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Libs/Constants.swift; sourceTree = "<group>"; };
 		8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MHImageTabBarViewController.swift; path = Libs/MHImageTabBarViewController.swift; sourceTree = "<group>"; };
 		8C7AE0561C70C273003DA821 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		8C908E791C8175EF00E792FD /* BMInputBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BMInputBox.swift; path = Libs/BMInputBox.swift; sourceTree = "<group>"; };
+		8C908E801C817E8B00E792FD /* DownloadedFileSystemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadedFileSystemTableViewCell.h; path = Inc/DownloadedFileSystemTableViewCell.h; sourceTree = "<group>"; };
+		8C908E811C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadedFileSystemTableViewCell.m; path = Inc/DownloadedFileSystemTableViewCell.m; sourceTree = "<group>"; };
+		8C908E821C817E8B00E792FD /* DownloadedFileSystemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DownloadedFileSystemTableViewCell.xib; path = Inc/DownloadedFileSystemTableViewCell.xib; sourceTree = "<group>"; };
 		8C918B011C719C14001FD400 /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Extensions.h; path = Inc/Extensions.h; sourceTree = "<group>"; };
 		8C918B021C719C14001FD400 /* Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Extensions.m; path = Inc/Extensions.m; sourceTree = "<group>"; };
 		8C918B041C719C35001FD400 /* MWKProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWKProgressIndicator.h; path = Libs/MWKProgressIndicator.h; sourceTree = "<group>"; };
@@ -279,11 +286,14 @@
 			name = DownloadsViewController;
 			sourceTree = "<group>";
 		};
-		8C5A70391C782BC0001CF377 /* DownloadTableViewCell */ = {
+		8C5A70391C782BC0001CF377 /* Download TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				8C908E801C817E8B00E792FD /* DownloadedFileSystemTableViewCell.h */,
+				8C908E811C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m */,
+				8C908E821C817E8B00E792FD /* DownloadedFileSystemTableViewCell.xib */,
 			);
-			name = DownloadTableViewCell;
+			name = "Download TableViewCell";
 			sourceTree = "<group>";
 		};
 		8C5FB3351C705B8900BB7C0A /* Foundations */ = {
@@ -338,6 +348,7 @@
 		8C8466CE1C6B775A00586CBC /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				8C908E761C8175A600E792FD /* Input box popup */,
 				8C5A70221C775609001CF377 /* Download Manager */,
 				8C5A700F1C76E37F001CF377 /* Floating button  */,
 				8C918B0D1C71A9A9001FD400 /* Multi-orientation Refresh */,
@@ -352,7 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				8C918B1A1C720754001FD400 /* Laracaster-Bridging-Header.h */,
-				8C5A70391C782BC0001CF377 /* DownloadTableViewCell */,
+				8C5A70391C782BC0001CF377 /* Download TableViewCell */,
 				8C5A70291C77563B001CF377 /* Laracasts Video Manager */,
 				8C5A70051C75BF13001CF377 /* ViewComposer */,
 				8C5A70001C75BB0F001CF377 /* User Defaults Manager */,
@@ -360,6 +371,14 @@
 				8C918B001C719BE1001FD400 /* Extensions */,
 			);
 			name = Inc;
+			sourceTree = "<group>";
+		};
+		8C908E761C8175A600E792FD /* Input box popup */ = {
+			isa = PBXGroup;
+			children = (
+				8C908E791C8175EF00E792FD /* BMInputBox.swift */,
+			);
+			name = "Input box popup";
 			sourceTree = "<group>";
 		};
 		8C918B001C719BE1001FD400 /* Extensions */ = {
@@ -585,6 +604,7 @@
 				8C5A70341C775C54001CF377 /* triggerSearch.js in Resources */,
 				8C5A70191C7739CB001CF377 /* checkIfContainsVideo.js in Resources */,
 				8CB3EF991C60D3A500B7104F /* Main.storyboard in Resources */,
+				8C908E841C817E8B00E792FD /* DownloadedFileSystemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5A70081C75BF27001CF377 /* ViewComposer.m in Sources */,
+				8C908E7A1C8175EF00E792FD /* BMInputBox.swift in Sources */,
 				8C918B131C7206FB001FD400 /* LaracastViewController.m in Sources */,
 				8C530F051C6F22A400242FBF /* CatalogueViewController.m in Sources */,
 				8C5A701F1C773A15001CF377 /* VCFloatingActionButton.m in Sources */,
@@ -620,6 +641,7 @@
 				8C5A70031C75BB34001CF377 /* UserDefaultsManager.m in Sources */,
 				8C5A70381C775D75001CF377 /* DownloadsViewController.m in Sources */,
 				8C918B031C719C14001FD400 /* Extensions.m in Sources */,
+				8C908E831C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m in Sources */,
 				8C5FB33F1C709E3500BB7C0A /* MHImageTabBarViewController.swift in Sources */,
 				8C918B191C720749001FD400 /* MBProgressHUD.m in Sources */,
 				8CB3EF931C60D3A500B7104F /* AppDelegate.m in Sources */,
@@ -786,11 +808,11 @@
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
@@ -802,19 +824,19 @@
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.Laracaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -840,11 +862,11 @@
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
@@ -856,19 +878,19 @@
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 					"-ObjC",
 					"-lz",
 					"-framework",
-					"Reveal\n",
+					Reveal,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "reactive-studio.Laracaster";
 				PRODUCT_NAME = "$(TARGET_NAME)";

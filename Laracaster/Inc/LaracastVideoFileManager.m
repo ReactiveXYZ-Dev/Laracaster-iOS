@@ -44,6 +44,7 @@ static NSString* defaultGroupName = @"default";
         
         if ([[NSFileManager defaultManager] fileExistsAtPath:[self pathToSaveGroupMap]]) {
             
+            // if has already saved group map
             [self readGroupMap];
             
         }else{
