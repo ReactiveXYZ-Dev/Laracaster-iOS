@@ -137,7 +137,11 @@ static NSString* defaultGroupName = @"default";
 
 -(NSArray*)allNonDefaultGroups{
     
-    return [_groupDictionary allKeys];
+    NSMutableArray* toBeRemoved = (NSMutableArray*)[_groupDictionary allKeys];
+    
+    [toBeRemoved removeObject:defaultGroupName];
+    
+    return toBeRemoved;
     
 }
 

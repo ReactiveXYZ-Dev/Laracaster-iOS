@@ -30,8 +30,13 @@
     
     [super viewDidLoad];
     
+}
+
+-(void)addNavTitle{
+    
     // Configure the nav bar
     [navBarItem setTitle:@"Watch"];
+
     
 }
 

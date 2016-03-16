@@ -14,4 +14,6 @@
 
 +(UIColor*)colorFromHex:(NSString*)hex;
 
++(UIColor*)randomMaterialColor;
+
 @end

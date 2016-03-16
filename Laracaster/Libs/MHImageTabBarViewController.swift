@@ -24,6 +24,7 @@ class MHImageTabBarViewController: UIViewController {
             imageViews[selectedViewControllerIndex].tintColor = MHImageTabBarConstants.tabBarSelectedItemColor
             
             switchToViewController(viewControllers[selectedViewControllerIndex])
+            
         }
     }
     

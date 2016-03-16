@@ -10,10 +10,24 @@
 
 @interface DownloadedFileSystemTableViewCell : UITableViewCell
 
-@property (strong,nonatomic) UIImageView* imageIcon;
+// IBOutlets
+// Self config
+@property (weak, nonatomic) IBOutlet UIImageView *fileDirIndicatorImageView;
 
-@property (strong,nonatomic) UIImageView* goForwardIndicatorIcon;
+// Manual config
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
-@property (strong,nonatomic) UILabel* detailLabel;
+// Self config
+@property (weak, nonatomic) IBOutlet UIImageView *proceedingIndicatorImageView;
+
+// Manual config
+@property (weak, nonatomic) IBOutlet UIView *decoratorView;
+
+
+// Configuration properties
+// File or Folder
+@property(assign,nonatomic)BOOL isFile;
+
+@property(assign,nonatomic)BOOL isShortened;
 
 @end

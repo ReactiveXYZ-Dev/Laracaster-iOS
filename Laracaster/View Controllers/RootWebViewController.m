@@ -86,15 +86,20 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(0)-[navBar(==64)]-(0)-[webView]-|" options:NSLayoutFormatAlignAllCenterX metrics:nil views:views]];
     
     // Now configure the nav bar items
-    navBarItem = [[UINavigationItem alloc]init];
-    
-    [navBar setItems:@[navBarItem]];
-    
-    UIBarButtonItem* settingsBtn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"settings"] style:UIBarButtonItemStyleDone target:self action:@selector(showSettings)];
-    
-    [settingsBtn setTintColor:[UIColor whiteColor]];
-    
-    [navBarItem setLeftBarButtonItem:settingsBtn animated:YES];
+    // @weird: It uses a dirty trick to fix the nav bar alignment problem
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        // add the left navbar item
+        [self addLeftNavBarItem];
+        
+        // configure the title for subclasses
+        if ([self respondsToSelector:@selector(addNavTitle)]) {
+            
+            [self performSelector:@selector(addNavTitle)];
+            
+        }
+        
+    });
     
     // Load my url
     if (initURL) {
@@ -118,6 +123,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)addLeftNavBarItem{
+    
+    navBarItem = [[UINavigationItem alloc]init];
+    
+    [navBar setItems:@[navBarItem]];
+    
+    UIBarButtonItem* settingsBtn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"settings"] style:UIBarButtonItemStyleDone target:self action:@selector(showSettings)];
+    
+    [settingsBtn setTintColor:[UIColor whiteColor]];
+    
+    [navBarItem setLeftBarButtonItem:settingsBtn animated:NO];
+    
 }
 
 #pragma mark - Public initializer

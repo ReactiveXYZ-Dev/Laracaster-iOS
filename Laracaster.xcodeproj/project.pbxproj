@@ -27,6 +27,7 @@
 		8C5FB33A1C705C7D00BB7C0A /* RootWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB3391C705C7D00BB7C0A /* RootWebViewController.m */; };
 		8C5FB33E1C709E3500BB7C0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33C1C709E3500BB7C0A /* Constants.swift */; };
 		8C5FB33F1C709E3500BB7C0A /* MHImageTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */; };
+		8C6C547A1C96D0280016E3EA /* DownloadsFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C54791C96D0280016E3EA /* DownloadsFolderViewController.m */; };
 		8C7AE0571C70C273003DA821 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7AE0561C70C273003DA821 /* Reveal.framework */; };
 		8C908E7A1C8175EF00E792FD /* BMInputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C908E791C8175EF00E792FD /* BMInputBox.swift */; };
 		8C908E831C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C908E811C817E8B00E792FD /* DownloadedFileSystemTableViewCell.m */; };
@@ -101,6 +102,8 @@
 		8C5FB3391C705C7D00BB7C0A /* RootWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootWebViewController.m; path = "View Controllers/RootWebViewController.m"; sourceTree = "<group>"; };
 		8C5FB33C1C709E3500BB7C0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Libs/Constants.swift; sourceTree = "<group>"; };
 		8C5FB33D1C709E3500BB7C0A /* MHImageTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MHImageTabBarViewController.swift; path = Libs/MHImageTabBarViewController.swift; sourceTree = "<group>"; };
+		8C6C54781C96D0280016E3EA /* DownloadsFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadsFolderViewController.h; path = "View Controllers/DownloadsFolderViewController.h"; sourceTree = "<group>"; };
+		8C6C54791C96D0280016E3EA /* DownloadsFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadsFolderViewController.m; path = "View Controllers/DownloadsFolderViewController.m"; sourceTree = "<group>"; };
 		8C7AE0561C70C273003DA821 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		8C908E791C8175EF00E792FD /* BMInputBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BMInputBox.swift; path = Libs/BMInputBox.swift; sourceTree = "<group>"; };
 		8C908E801C817E8B00E792FD /* DownloadedFileSystemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadedFileSystemTableViewCell.h; path = Inc/DownloadedFileSystemTableViewCell.h; sourceTree = "<group>"; };
@@ -280,6 +283,7 @@
 		8C5A70351C775D4F001CF377 /* DownloadsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8C6C54771C96D0060016E3EA /* DownloadsFolderViewController */,
 				8C5A70361C775D75001CF377 /* DownloadsViewController.h */,
 				8C5A70371C775D75001CF377 /* DownloadsViewController.m */,
 			);
@@ -331,6 +335,15 @@
 				8C918B051C719C35001FD400 /* MWKProgressIndicator.m */,
 			);
 			name = "Navbar Progress Indicator";
+			sourceTree = "<group>";
+		};
+		8C6C54771C96D0060016E3EA /* DownloadsFolderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C6C54781C96D0280016E3EA /* DownloadsFolderViewController.h */,
+				8C6C54791C96D0280016E3EA /* DownloadsFolderViewController.m */,
+			);
+			name = DownloadsFolderViewController;
 			sourceTree = "<group>";
 		};
 		8C8466CD1C6B774F00586CBC /* View Controllers */ = {
@@ -653,6 +666,7 @@
 				8C5A70311C77569E001CF377 /* TWRDownloadManager.m in Sources */,
 				8C5FB33A1C705C7D00BB7C0A /* RootWebViewController.m in Sources */,
 				8C918B061C719C35001FD400 /* MWKProgressIndicator.m in Sources */,
+				8C6C547A1C96D0280016E3EA /* DownloadsFolderViewController.m in Sources */,
 				8CD7FFF21C80299200F0738A /* LaracastVideoFileInstance.m in Sources */,
 				8C5A6FFF1C74C021001CF377 /* NewUserActionViewController.m in Sources */,
 				8C5FB33E1C709E3500BB7C0A /* Constants.swift in Sources */,

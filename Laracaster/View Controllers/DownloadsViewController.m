@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
 
 @property (strong,nonatomic) UITableView* downloadedTableView;
 
+@property (strong,nonatomic) UISearchBar* searchBar;
+
 @end
 
 @implementation DownloadsViewController
@@ -135,6 +137,9 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
             
             _downloadedTableView.hidden = NO;
             
+            // scroll to the top to conceal the search bar
+            [_downloadedTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+            
         }
             break;
             
@@ -152,6 +157,32 @@ typedef NS_ENUM(NSInteger,TABLEVIEW_TYPE) {
 }
 
 #pragma mark - TableView Delegates and Data source
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    // For downloaded tableview, add a UISearchBar
+    if (tableView.tag == TABLEVIEW_DOWNLOADED) {
+        
+        _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+        
+        return _searchBar;
+        
+    }
+    
+    return nil;
+    
+}
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    // For downloaded tableview, return the height of a fucking search bar
+    if (tableView.tag == TABLEVIEW_DOWNLOADED) {
+        
+        return 44;
+        
+    }
+    
+    return 0;
+    
+}
 
 @end
